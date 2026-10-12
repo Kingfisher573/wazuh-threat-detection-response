@@ -74,6 +74,8 @@ This evidence demonstrates the detection and automated response workflow in the 
 - All five benign-file tests completed without unwanted file removal.
 - The average detection-to-containment time was approximately 9 seconds in this lab.
 
+- **Active Response execution evidence:** Wazuh rule 87105 recorded the malicious verdict at 23:15:54.731, followed by rule 553 recording file deletion at 23:15:54.772 — a measured interval of 41 milliseconds.
+
 These results demonstrate how SIEM monitoring, threat intelligence, and automated response can work together to support security operations. Results were measured in a controlled lab environment and are not production performance guarantees.
 ## Author
 Kingfisher573 — Aspiring SOC Analyst
