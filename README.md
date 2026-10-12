@@ -56,6 +56,14 @@ flowchart TD
     E -->|No| I["No automated removal"]
 ```
 
+## Evidence
 
+### Wazuh Detection and Automated Containment
+
+The screenshot below shows the VirusTotal malicious verdict and the subsequent file deletion alert observed during controlled EICAR testing.
+
+![Wazuh detection and containment evidence](closed_loop%20detection%20and%20response.PNG)
+
+This evidence demonstrates the detection and automated response workflow in the Wazuh SOC lab.
 ## Author
 Kingfisher573 — Aspiring SOC Analyst
