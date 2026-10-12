@@ -65,5 +65,15 @@ The screenshot below shows the VirusTotal malicious verdict and the subsequent f
 ![Wazuh detection and containment evidence](closed_loop%20detection%20and%20response.PNG)
 
 This evidence demonstrates the detection and automated response workflow in the Wazuh SOC lab.
+
+## Key Findings
+
+- Wazuh File Integrity Monitoring detected file activity on the Ubuntu endpoint.
+- VirusTotal threat intelligence enrichment helped identify the EICAR test file as malicious.
+- Wazuh Active Response successfully removed the test file during all three controlled EICAR trials.
+- All five benign-file tests completed without unwanted file removal.
+- The average detection-to-containment time was approximately 9 seconds in this lab.
+
+These results demonstrate how SIEM monitoring, threat intelligence, and automated response can work together to support security operations. Results were measured in a controlled lab environment and are not production performance guarantees.
 ## Author
 Kingfisher573 — Aspiring SOC Analyst
