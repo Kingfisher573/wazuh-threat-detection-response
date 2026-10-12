@@ -42,5 +42,20 @@ These results reflect controlled lab tests, not production performance guarantee
 ## Safety Notice
 Testing was conducted in a controlled lab using the EICAR antivirus test file. This project is for educational and defensive security purposes.
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    A["Ubuntu Endpoint: vtcsec<br/>Wazuh Agent + FIM"] -->|File events| B["Kali Linux VM<br/>Wazuh Manager"]
+    B --> C["VirusTotal Integration"]
+    C <--> D["VirusTotal Service"]
+    B --> E{"Malicious verdict?"}
+    E -->|Yes| F["Wazuh Active Response"]
+    F -->|Response instruction| G["Ubuntu: remove-threat.sh"]
+    G --> H["Malicious test file removed"]
+    E -->|No| I["No automated removal"]
+```
+
+
 ## Author
 Kingfisher573 — Aspiring SOC Analyst
